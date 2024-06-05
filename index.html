@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="nav">
+        
+        <div class="logo-box">
+            <div class="logo">
+                
+            </div>
+            <div class="app-name">weathervue</div>
+        </div>
+    <!-- <div class="search-bar"> -->
+            <form action="" class="search-bar" id="search">
+        <input type="text" id="query" placeholder="Search a city..">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+            </form>
+    <!-- </div> -->
+        <div class="live-loc-box">
+            <div class="live-loc">
+                <i class="fas fa-location"></i>
+                <div class="live-txt">LIVE LOCATION</div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="main">
+        <div class="left-part">
+            <div class="info-box">
+               <div class="info" id="temp">0&#176;</div>
+               <div class="info" id="city-time">
+                <div id="loc">Loading..</div>
+                <div class="day">
+                    <!-- <span id="time">06:09</span> -->
+                    <span id="date-time">06:09 Monday Sep 9</span>
+                </div>
+               </div>
+               <div class="info" id="weather">
+                <div class="skyImg"></div>
+                <span id="condition">Clear</span>
+               </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="informations">
+                <div class="nature" id="wind-speed">
+                    <div class="wind-txt right-texts">Wind Speed</div>
+                    <i class="fa-solid fa-wind"></i>
+                    <span class="rate" id="speed">0kmph</span>
+                </div>
+                <div class="nature" id="humidity">
+                    <div class="humidity-txt right-texts">Humidity</div>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span class="rate" id="humidity-rate">0%</span>
+                </div>
+                <div class="nature" id="pressure">
+                    <div class="pressure-txt right-texts">Pressure</div>
+                    <i class="fa-solid fa-water"></i>
+                    <span class="rate" id="pressure-rate">0hPa</span>
+                </div>
+                <div class="nature" id="cloud">
+                    <div class="cloud-txt right-texts">Cloud</div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span class="rate" id="cloud-rate">0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
